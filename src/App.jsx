@@ -12,7 +12,14 @@ function App() {
   };
 
   console.log("component rendered")
-  return <App1 />;
+  return (
+    <div>
+      <input
+      onChange={(e) => setText(e.target.value)}
+      placeholder="enter a text"/>
+      <span>Total: {sum}</span>
+    </div>
+  );
 }
 
 export default App;
